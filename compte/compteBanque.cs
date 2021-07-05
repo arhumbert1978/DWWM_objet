@@ -10,7 +10,7 @@ namespace compte
 
 
         
-        private int decouvertAutorise;
+        private double decouvertAutorise;
         private string nomCompte;
         private string numeroCompte;
         private double soldeCompte;
@@ -19,7 +19,7 @@ namespace compte
         {
         }
 
-        public compteBanque(string e, int decouvertAutorise, string nomCompte, string numeroCompte, double soldeCompte)
+        public compteBanque(string e, double decouvertAutorise, string nomCompte, string numeroCompte, double soldeCompte)
         {
           
             this.decouvertAutorise = decouvertAutorise;
@@ -86,7 +86,7 @@ namespace compte
 
                 return false;
             }
-            else
+            else if(SoldeCompte>=Decouvert)
             {
 
                 return true;
@@ -96,9 +96,35 @@ namespace compte
         {
 
 
-            return "Le Compte n°:" + this.GetNumero + " appartenant à : " + GetNom + "  ayant pour solde " + SoldeCompte + e + " Euros  Ayant un decouvert de:" + Decouvert + e;
+            return "Le Compte n°:" + this.GetNumero + " appartenant à : " + GetNom + "  ayant pour solde " + SoldeCompte + e + " Ayant un decouvert de:" + Decouvert + e;
             
         }
+
+
+        //pb pour faire est supérieur. Avec les trois param
+
+
+        public bool virement(double _Montant, compteBanque _Bene )
+        {
+            bool valVir;
+            if(this.debit(_Montant)==false)
+            {
+
+                valVir == false;
+
+            }
+            else
+            {
+                this.debit(_Montant);
+                _Bene.credit(_Montant);
+                valVir == true;
+            }
+
+            return valVir;
+
+        }
+
+
 
     }
 }
