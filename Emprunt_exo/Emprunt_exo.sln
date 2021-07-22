@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emprunt_exo", "Emprunt_exo.csproj", "{55A5D597-BF12-43C1-8AF6-2A75981C91B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib_Emprunt", "..\Lib_Emprunt\Lib_Emprunt.csproj", "{1D119233-42D5-4F93-A2F1-3FF7E61A60DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55A5D597-BF12-43C1-8AF6-2A75981C91B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A5D597-BF12-43C1-8AF6-2A75981C91B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A5D597-BF12-43C1-8AF6-2A75981C91B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A5D597-BF12-43C1-8AF6-2A75981C91B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D119233-42D5-4F93-A2F1-3FF7E61A60DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D119233-42D5-4F93-A2F1-3FF7E61A60DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D119233-42D5-4F93-A2F1-3FF7E61A60DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D119233-42D5-4F93-A2F1-3FF7E61A60DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64346D49-C194-47E1-8AB0-3BE77B4AC36B}
+	EndGlobalSection
+EndGlobal
